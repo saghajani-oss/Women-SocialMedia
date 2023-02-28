@@ -747,7 +747,7 @@ Media queries for small laptops and big tablets
   }
 
   main .container .left {
-     grid-column: 3/4; /*It means that left side start from column 3 & 4 (changing the place of left to right side) */
+    grid-column: 3/4; /*It means that left side start from column 3 & 4 (changing the place of left to right side) */
     position: fixed;
     bottom: 0;
     right: 0;
@@ -773,5 +773,4 @@ Media queries for small laptops and big tablets
   main .container .right {
     display: none;
   }
-
 }
