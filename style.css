@@ -1,8 +1,9 @@
 :root {
+  --primary-color-hue: 252;
   --color-white: hsl(252, 30%, 100%);
   --color-light: hsl(252, 30%, 95%);
   --color-gray: hsl(252, 15%, 65%);
-  --color-primary: hsl(252, 75%, 60%);
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
   --color-secondary: hsl(252, 100%, 90%);
   --color-success: hsl(120, 95%, 65%);
   --color-danger: hsl(0, 95%, 65%);
@@ -576,6 +577,7 @@ main .container .right {
   padding: 3rem;
   border-radius: var(--card-border-radius);
   width: 50%;
+  box-shadow: 0 0 1rem var(--color-primary);
 }
 
 /* STYLING FONT SIZE OF THEME CUSTOMIZATION */
@@ -733,10 +735,14 @@ Media queries for small laptops and big tablets
   .left .btn {
     display: none;
   }
+
+  .customize-theme .card {
+    width: 80vw;
+  }
 }
 
 /*================================================
-Media queries for small laptops and big tablets
+Media queries for small tablets and mobile phones
 =================================================*/
 @media screen and (max-width: 992px) {
   nav .search-bar {
@@ -774,5 +780,9 @@ Media queries for small laptops and big tablets
 
   main .container .right {
     display: none;
+  }
+
+  .customize-theme .card {
+    width: 92vw;
   }
 }
