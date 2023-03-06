@@ -792,4 +792,8 @@ Media queries for small tablets and mobile phones
 .customize-theme .background .choose-bg {
   overflow: hidden;
 }
+
+.customize-theme .choose-bg > div {
+  font-size: 0.5rem;
+}
 }
