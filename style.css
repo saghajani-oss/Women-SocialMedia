@@ -799,6 +799,8 @@ Media queries for small tablets and mobile phones
 }
 
 .customize-theme .choose-bg > div span {
-  display: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.3rem;
 }
 }
