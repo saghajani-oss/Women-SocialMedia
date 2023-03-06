@@ -116,7 +116,7 @@ nav .container {
   width: 30vw;
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: var(--color-dark);
+  color: var(--color-primary);
 }
 
 nav .search-bar input[type="search"]::placeholder {
@@ -377,6 +377,8 @@ main .container .left .profile {
     color: var(--color-dark);
     margin-right: 1rem;
 }
+
+    
 
 .middle .create-post .profile-picture img {
     height: 100%;
