@@ -795,6 +795,7 @@ Media queries for small tablets and mobile phones
 
 .customize-theme .choose-bg > div {
   font-size: 0.5rem;
+  text-align: center;
 }
 
 .customize-theme .choose-bg > div span {
