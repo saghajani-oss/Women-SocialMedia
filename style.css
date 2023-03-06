@@ -374,7 +374,7 @@ main .container .left .profile {
     width: 100%;
     padding-left: 1rem;
     background: transparent;
-    color: var(--color-dark);
+    color: var(--color-primary);
     margin-right: 1rem;
 }
 
@@ -806,7 +806,4 @@ Media queries for small tablets and mobile phones
   margin-right: 0.3rem;
 }
 
-.search-bar input[type="search"] {
-  color: var(--color-primary);
-}
 }
