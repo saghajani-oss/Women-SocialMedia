@@ -789,5 +789,7 @@ Media queries for small tablets and mobile phones
     width: 92vw;
   }
 
-
+.customize-theme .background .choose-bg {
+  overflow: hidden;
+}
 }
