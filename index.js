@@ -16,6 +16,12 @@ const fontSizes = document.querySelectorAll(".choose-size span");
 var root = document.querySelector(":root");
 //change color
 const colorPalette = document.querySelectorAll(".choose-color span");
+//change Background
+const Bg1 = document.querySelector(".bg-1");
+const Bg2 = document.querySelector(".bg-2");
+const Bg3 = document.querySelector(".bg-3");
+
+const body = document.querySelector("body");
 
 //SIDEBAR
 //remove active class from all menu items
@@ -127,6 +133,7 @@ fontSizes.forEach(size => {
 // font size
 
 //change color
+// remove active class from colors
 const removeColorPalette = () => {
   colorPalette.forEach(color => {
     color.classList.remove("active")
@@ -152,4 +159,48 @@ colorPalette.forEach(color => {
 })
 
 //change color
+
+
+//change Background
+let lightColorLightness;
+let whiteColorLightness;
+let darkColorLightness;
+
+const changeBG = () => {
+  root.style.setProperty("--light-color-lightness", lightColorLightness);
+  root.style.setProperty("--white-color-lightness", whiteColorLightness);
+  root.style.setProperty("darkColorLightness", darkColorLightness);
+}
+
+Bg1.addEventListener("click", () => {
+  Bg1.classList.add("active");
+  Bg2.classList.remove("active");
+  Bg3.classList.remove("active");
+  //remove customized changes from local storage
+  window.location.reload();
+})
+
+Bg2.addEventListener("click", ()=> {
+  darkColorLightness = "95%";
+  whiteColorLightness = "20%";
+  lightColorLightness = "15%";
+  Bg2.classList.add("active");
+  Bg1.classList.remove("active");
+  Bg3.classList.remove("active");
+  changeBG();
+  body.style.color = "white";
+})
+
+Bg3.addEventListener("click", () => {
+  darkColorLightness = "95%";
+  whiteColorLightness = "10%";
+  lightColorLightness = "0%";
+  Bg3.classList.add("active");
+  Bg1.classList.remove("active");
+  Bg2.classList.remove("active");
+  changeBG();
+  body.style.color = "white";
+})
+
+//change Background
 // THEME DISPLAY CUSTOMIZATION
